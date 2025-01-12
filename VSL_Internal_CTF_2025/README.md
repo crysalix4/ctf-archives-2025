@@ -14,7 +14,7 @@
 2. **CodeCage**
    - [Solution](./solutions/solution2.md)
 
-3. **HTML2PDF**
+3. **MyProject**
    - [Solution](./solutions/solution3.md)
 
 Please ensure that your contributions adhere to the repository's [code of conduct](./CODE_OF_CONDUCT.md) and [contribution guidelines](./CONTRIBUTING.md).
