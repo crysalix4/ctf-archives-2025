@@ -6,6 +6,7 @@
 
 This is a place for you to test your coding skills and explore interesting things in a safe environment. Don't forget to solve the CAPTCHA to get started, and remember that all your actions must comply with security principles.
 
+## Code
 ```python
 ALLOWED_MODULES = {
     'abc',
@@ -20,6 +21,7 @@ ALLOWED_MODULES = {
     'code',
     'codecs',
     'copy',
+    'random
     ...
 }
 ```
@@ -28,14 +30,14 @@ ALLOWED_MODULES = {
 ### 1. Analyzing the `random` Module
 Upon inspecting the `random` module, it becomes evident that it has a linkage to the `_os` module. This association presents an opportunity to exploit and execute Remote Code Execution (RCE) within the sandbox environment.
 
-![Sandbox Escape](image/image.png)
+![Sandbox Escape](../image/image.png)
 
 ---
 
 ### 2. Exploiting with Reverse Shells
 We use reverse shells (`revshells`) to exploit the vulnerability and gain access to the `flag.txt` file.
 
-![RCE](image/image-2.png)
+![RCE](../image/image-2.png)
 
 ---
 
