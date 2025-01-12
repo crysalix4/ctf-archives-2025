@@ -3,7 +3,7 @@
 **Category**: Web Exploitation  
 **Flag**: `VSL{12e844403b1fb9c5b6705d8dd8823e4a}`
 
-## Challenge Description
+## Description
 
 The **UserPortal** challenge presents a web application feature that allows users to render templates. Upon inspecting the source code, it becomes evident that the application uses the `eval()` function within the `render_template` method to process user-supplied templates. The primary objective is to achieve Remote Code Execution (RCE) despite the presence of a blacklist intended to block dangerous PHP functions.
 
