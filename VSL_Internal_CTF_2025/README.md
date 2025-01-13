@@ -25,7 +25,6 @@
 
 1. **MyBot**
    - [Solution](./solutions/solution5.md)
-Please ensure that your contributions adhere to the repository's [code of conduct](./CODE_OF_CONDUCT.md) and [contribution guidelines](./CONTRIBUTING.md).
 
 ## License
 
